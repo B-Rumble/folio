@@ -58,7 +58,7 @@ a:hover {
     text-align: right;
 }
 .social {
-    height: 15px;
+    width: 15px;
     padding-left: 20px;
 }
 .dash {
@@ -107,7 +107,7 @@ a:hover {
         "f f s co";
     }
     .social {
-    height: 15px;
+    width: 15px;
     padding-left: 15px;
 }
 }
