@@ -4,40 +4,31 @@
     font-size: .95em;
     letter-spacing: .5px;
 }
-
 body {
    height:100%;
    margin: 0;
    padding: 20px 50px 0px 50px;
    overflow: hidden;
 }
-
 ::selection {
   background: #e44e27;
 }
-
 h1 {
     font-size: 4vw;
     line-height: 1.4;
 }
-
 .b {
     font-weight: bold;
 }
-
 a {
     opacity: 0.3;
     text-decoration: none;
 }
-
 a:hover {
     opacity: 1;
     text-decoration: none;
 }
-
-
 /* GRID// */
-
 .container {
     height: 100%;
     display: grid;
@@ -49,52 +40,40 @@ a:hover {
         ". c c c c ."
         "f f . s co co";
 }
-
 .header {
     grid-area: h;
 }
-
 .menu {
     text-align: right;
     grid-area: m;
 }
-
 .content {
     grid-area: c;
 }
-
 .footer {
     grid-area: f;
 }
-
 .connect {
     grid-area: co;
     text-align: right;
 }
-
 .social {
     height: 15px;
     padding-left: 20px;
 }
-
 .dash {
     grid-area: d;
 }
-
 .slash {
     grid-area: s;
 }
-
-
 /* QUERIES// */
-
-@media only screen and (max-width: 900px) {
-    
+@media only screen
+    and (max-width: 900px) {
     h1 {
         font-size: 4.5vw;
         line-height: 1.4;
     }  
-
     .container {
     height: 100%;
     display: grid;
@@ -106,20 +85,16 @@ a:hover {
         "c c c c c c"
         "f f . s co co";
     }
-
 }
-
 @media only screen
     and (max-width: 400px)
     and (min-device-width: 414px)
     and (max-device-width: 736px)
     and (-webkit-min-device-pixel-ratio: 3) {
-
     h1 {
         font-size: 4.5vw;
         line-height: 1.4;
     }
-
     .container {
     height: 100%;
     display: grid;
@@ -131,10 +106,8 @@ a:hover {
         "c c c c"
         "f f s co";
     }
-
     .social {
     height: 15px;
     padding-left: 15px;
 }
-
 }
