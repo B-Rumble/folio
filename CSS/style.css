@@ -45,9 +45,9 @@ a:hover {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto auto 90px; 
     grid-template-areas: 
-        "h h . d m m"
+        "h h d d m m"
         ". c c c c ."
-        "f f . s co co";
+        "f f s s co co";
 }
 
 .header {
