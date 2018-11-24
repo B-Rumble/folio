@@ -88,7 +88,8 @@ a:hover {
 
 /* QUERIES// */
 
-@media only screen and (max-width: 900px) {
+@media only screen
+    and (max-width: 900px) {
     
     h1 {
         font-size: 4.5vw;
@@ -133,7 +134,7 @@ a:hover {
     }
 
     .social {
-    height: 15px;
+    height: 25px;
     padding-left: 15px;
 }
 
