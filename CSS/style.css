@@ -1,7 +1,7 @@
 * {
     font-family: 'Poppins', sans-serif;
     color: black;
-    font-size: 15px;
+    font-size: .95em;
     letter-spacing: .5px;
 }
 
@@ -88,8 +88,7 @@ a:hover {
 
 /* QUERIES// */
 
-@media only screen
-    and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     
     h1 {
         font-size: 4.5vw;
@@ -104,7 +103,7 @@ a:hover {
     grid-template-rows: auto auto 90px; 
     grid-template-areas: 
         "h h . d m m"
-        ". c c c c ."
+        "c c c c c c"
         "f f . s co co";
     }
 
@@ -115,7 +114,7 @@ a:hover {
     and (min-device-width: 414px)
     and (max-device-width: 736px)
     and (-webkit-min-device-pixel-ratio: 3) {
-    
+
     h1 {
         font-size: 4.5vw;
         line-height: 1.4;
@@ -132,9 +131,9 @@ a:hover {
         "c c c c"
         "f f s co";
     }
- 
+
     .social {
-    height: 25px;
+    height: 15px;
     padding-left: 15px;
 }
 
