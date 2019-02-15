@@ -1,0 +1,158 @@
+html, body {
+   height:100%;
+   margin: 0;
+   overflow: hidden;
+}
+::selection {
+  background: white;
+  color: black;
+}
+* {
+    background-color: black;
+/* TYPOG */
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-size: .98em;
+    color: white;
+    font-weight: 400;
+    letter-spacing: .7px;
+    font-feature-settings: "salt";
+}
+/* TYPOG CONT. */
+h1 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    font-feature-settings: "salt","ss##","calt","liga";
+}
+.b {
+    font-weight: 500;
+}
+a {
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+    text-decoration: none;
+}
+a:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    text-decoration: none;
+}
+/* GRID// */
+.container {
+    height: 100%;
+    padding: 25px 50px;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto 90px; 
+    grid-template-areas: 
+        "h h . d m m"
+        "c c c c c c"
+        "f f . s co co";
+
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+/* KEYFRAMES// */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+header {
+    grid-area: h;
+}
+.menu {
+    text-align: right;
+    grid-area: m;
+}
+.content {
+    grid-area: c;
+}
+.footer {
+    grid-area: f;
+}
+.connect {
+    grid-area: co;
+    text-align: right;
+}
+.social {
+    height: 16px;
+    padding-left: 20px;
+}
+.dash {
+    grid-area: d;
+}
+.slash {
+    grid-area: s;
+}
+/* QUERIES// */
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 5vw;
+        /* line-height: 1.4; */
+    }  
+    .container {
+    height: 100%;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto 90px; 
+    grid-template-areas: 
+        "h h . d m m"
+        "c c c c c c"
+        "f f . s co co";
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 5vw;
+    }
+    .container {
+    height: 100%;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 90px; 
+    grid-template-areas: 
+        "h h d m"
+        "c c c c"
+        "f f s co";
+    }
+    .social {
+    height: 16px;
+    padding-left: 12px;
+}
+}
